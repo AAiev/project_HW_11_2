@@ -4,7 +4,10 @@ def transform_in_upper(word):
     :param word: str
     :return: word.upper
     """
-    return word.upper()
+    word_str = str(word)
+    if word_str.isalpha():
+        return word_str.upper()
+
 
 def transform_in_title(word):
     """
@@ -12,4 +15,6 @@ def transform_in_title(word):
     :param word: str
     :return: word.title
     """
-    return word.title()
+    word_str = str(word)
+    if word_str.isalpha():
+        return word.title()
